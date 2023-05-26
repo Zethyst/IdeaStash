@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.material-icons {
+  transform: translateY(20px);
+  transform: scale(1.2);
+  margin: auto 5px;
+}
+i {
+  transform: translateY(20px);
+}
+nav a {
+  font-size: 30px;
+  font-weight: 600;
+  color: #f59e0b;
+  text-decoration: none;
+  transform: translateX(80px);
+}
+nav {
+  background-color: #111827;
+  height: 80px;
+}
+.signature-color:hover {
+  color: #cf8001;
+}
+#addbtn {
+  background-color: #f59e0b;
+  color: #111827;
+  border: none;
+  border-radius: 8px;
+  height: 70%;
+  font-weight: 600;
+  width: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  transform: translateX(-80px);
+}
+#addbtn:hover {
+  background-color: #cf8001;
+}
+body,
+html,
+#notesContainer {
+  background-color: #d1fae5;
+  font-family: "Poppins", sans-serif;
+}
+.hide {
+  display: none;
+}
+#notesContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+.notes {
+  background-color: purple;
+  margin: 50px;
+  padding: 10px;
+  height: 250px;
+  width: 260px;
+  border-bottom: 4px solid #f5c20b;
+  border-right: 3px solid #f5c20b;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.heading {
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content: end;
+  margin: 10px;
+}
+#edit {
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0px 10px;
+}
+#edit:hover {
+  background-color: rgb(0, 108, 0);
+  color: white;
+}
+#delete {
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+#delete:hover {
+  background-color: rgb(212, 1, 1);
+  color: white;
+}
+.noteText {
+  color: white;
+  padding: 10px;
+  padding-bottom: 16px; /* 1rem */
+  word-wrap: break-word;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+textarea {
+  border: none;
+  border: 1px solid #f59e0b;
+  border-radius: 5px;
+  padding: 20px;
+  height: 170px;
+  width: 100%;
+  outline: none;
+}
+textarea::placeholder {
+  color: gray;
+}
+.animate {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+
+  @keyframes ping {
+    75%,
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+}
+.opacity {
+  opacity: 0.3;
+}
+.transition {
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition-duration: 150ms; */
+  transition-duration: 75ms;
+}
+
+@media screen and (max-width: 1300px) {
+  .notes {
+    width: 290px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .notes {
+    width: 330px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .notes {
+    width: 370px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #addbtn {
+    height: 60%;
+    font-weight: 500;
+    width: auto;
+    padding: 10px;
+    transform: translateX(-30px);
+  }
+  nav a {
+    font-size: 30px;
+    font-weight: 600;
+    transform: translateX(30px);
+  }
+  #notesContainer{
+    justify-content: center;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .notes {
+    width: 430px;
+    margin: 50px 50px 2px 50px;
+  }
+  #addbtn {
+    height: 60%;
+    font-weight: 500;
+    width: auto;
+    padding: 10px;
+    transform: translateX(-15px);
+  }
+  nav a {
+    font-size: 30px;
+    font-weight: 600;
+    transform: translateX(15px);
+  }
+}
+
+@media screen and (max-width: 350px) {
+}
