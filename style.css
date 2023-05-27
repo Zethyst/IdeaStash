@@ -44,11 +44,12 @@ nav {
 body,
 html,
 #notesContainer {
-  background-color: #d1fae5;
+  background: #d1fae5;
   font-family: "Poppins", sans-serif;
 }
 .hide {
   display: none;
+  visibility: hidden;
 }
 #notesContainer {
   height: 100%;
@@ -59,14 +60,14 @@ html,
   padding-bottom: 20px;
 }
 .notes {
-  background-color: purple;
+  background: purple;
   margin: 50px;
   padding: 10px;
   height: 250px;
   width: 260px;
   border-bottom: 4px solid #f5c20b;
   border-right: 3px solid #f5c20b;
-  border-radius: 4px;
+  border-radius: 5px;
   overflow: hidden;
 }
 .heading {
@@ -105,18 +106,6 @@ html,
   letter-spacing: 2px;
   font-size: 20px;
 }
-textarea {
-  border: none;
-  border: 1px solid #f59e0b;
-  border-radius: 5px;
-  padding: 20px;
-  height: 170px;
-  width: 100%;
-  outline: none;
-}
-textarea::placeholder {
-  color: gray;
-}
 .animate {
   animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 
@@ -137,6 +126,147 @@ textarea::placeholder {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* transition-duration: 150ms; */
   transition-duration: 75ms;
+}
+.bgcolor-option {
+  width: 100%;
+  height: auto;
+}
+.bgcolor-option .circles {
+  display: flex;
+  justify-content: center;
+}
+.bgcolor-option .circles .circle {
+  height: 20px;
+  width: 20px;
+  object-fit: fill;
+  background: #acf6cf;
+   border-radius: 50%; 
+   margin: 10px 10px; 
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.bgcolor-option .circles .circle.blue-green.active {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #29ca77;
+}
+.bgcolor-option .circles .circle.pink {
+  background: #fa1795;
+}
+.bgcolor-option .circles .circle.circle.pink.active {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #fa1795;
+}
+.bgcolor-option .circles .circle.yellow {
+  background: #f5da00;
+}
+.bgcolor-option .circles .circle.circle.yellow.active {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #f5da00;
+}
+.bgcolor-option .circles .circle.green {
+  background: #68bc5c;
+}
+.bgcolor-option .circles .circle.circle.green.active {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #148f04;
+}
+.bgcolor-option .circles .circle.purple {
+  background: #b16ae3;
+}
+.bgcolor-option .circles .circle.circle.purple.active {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #a54fe3;
+}
+.bgcolor-option .circles .circle.blue {
+  background: #3bbae4;
+}
+.bgcolor-option .circles .circle.circle.blue.active {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #17a7d7;
+}
+.bgcolor-option .circles .circle.gray {
+  background: #8b8a8a;
+}
+.bgcolor-option .circles .circle.circle.gray.active {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #717070;
+}
+.bgcolor-option .circles .circle.black {
+  background: #1f1e1e;
+}
+.bgcolor-option .circles .circle.circle.black.active {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b0b0b;
+}
+
+.notecolor-option {
+  width: 100%;
+  height: auto;
+}
+.notecolor-option .circles {
+  display: flex;
+  justify-content: center;
+}
+.notecolor-option .circles .circle {
+  height: 15px;
+  width: 15px;
+  object-fit: fill;
+  background: purple;
+   border-radius: 50%; 
+   margin: 10px 10px; 
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.notecolor-option .circles .circle.yellow {
+  background: #f5da00;
+}
+.notecolor-option .circles .circle.circle.yellow.active {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #f5da00;
+}
+.notecolor-option .circles .circle.aqua {
+  background: #68bc5c;
+}
+.notecolor-option .circles .circle.circle.aqua.active {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #148f04;
+}
+.notecolor-option .circles .circle.purple {
+  background: #b16ae3;
+}
+.notecolor-option .circles .circle.circle.purple.active {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgb(100, 3, 100);
+}
+.notecolor-option .circles .circle.red {
+  background: red;
+}
+.notecolor-option .circles .circle.circle.red.active {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgb(187, 0, 0);
+}
+    
+#editor {
+  height: 150px;
+  width: auto;
+  margin: 10px auto 0;
+  padding: 10px;
+  background:white;
+  outline: none;
+  border-radius: 5px;
+  color: gray;
+  word-wrap: break-word;
+}
+
+.text {
+  margin: 2px auto 15px;
+  /* width: 375px; */
+}
+.tools{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.toolsBtn {
+  width: 5ex;
+  text-align: center;
+  padding: 1px 3px;
+}
+.toolsBtn:hover{
+  background: rgb(108, 1, 108);
+}
+#strike{
+  text-decoration:line-through;
 }
 
 @media screen and (max-width: 1300px) {
@@ -169,13 +299,51 @@ textarea::placeholder {
     font-weight: 600;
     transform: translateX(30px);
   }
-  #notesContainer{
+  #notesContainer {
     justify-content: center;
   }
   nav {
     display: flex;
     justify-content: space-between;
   }
+  .bgcolor-option .circles .circle {
+    height: 50px;
+    width: 70px;
+    object-fit: fill;
+    background: #bdf9d9;
+    border-radius: 0;
+   margin: 0px;
+  }
+  .bgcolor-option .circles .circle.blue-green.active {
+    box-shadow: none;
+  }
+.bgcolor-option .circles .circle.circle.pink.active {
+  box-shadow: none;
+}
+
+.bgcolor-option .circles .circle.circle.yellow.active {
+  box-shadow: none;
+}
+
+.bgcolor-option .circles .circle.circle.green.active {
+  box-shadow: none;
+}
+
+.bgcolor-option .circles .circle.circle.purple.active {
+  box-shadow: none;
+}
+
+.bgcolor-option .circles .circle.circle.blue.active {
+  box-shadow: none;
+}
+
+.bgcolor-option .circles .circle.circle.gray.active {
+  box-shadow: none;
+}
+
+.bgcolor-option .circles .circle.circle.black.active {
+  box-shadow: none;
+}
 }
 
 @media screen and (max-width: 550px) {
