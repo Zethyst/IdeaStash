@@ -8,9 +8,7 @@
 <dl>
 <dt>Effortless Note Taking:</dt><dd> Capture your thoughts, ideas, and important information seamlessly with our user-friendly interface. Write, edit, and organize your notes with ease.</dd>
 
-<dt>Cross-Platform Accessibility: </dt><dd>: Access your notes anytime, anywhere, from any device. IdeaStash works seamlessly across desktop, tablets, and mobile devices, allowing you to take your notes wherever you go.</dd>
-
-<dt>Powerful Search Capabilities:</dt><dd> Find specific notes or keywords within your vast collection of notes instantly. Our advanced search functionality saves you time and ensures you locate the information you need in a snap.</dd>
+<dt>Customizable Formatting::</dt><dd> Personalize the appearance of your notes with customizable formatting options. Apply bold, italic, underline, and strike-through styles to emphasize and structure your text.</dd>
 
 <dt>Customizable Personalization:</dt><dd> Tailor IdeaStash to fit your preferences. Customize the interface, themes to create a note-taking environment that suits your unique style and enhances your workflow.</dd>
 </dl>
