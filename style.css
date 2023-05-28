@@ -363,6 +363,9 @@ html,
     font-weight: 600;
     transform: translateX(15px);
   }
+  .notecolor-option .circles .circle {
+     margin: 7px 10px; 
+  }
 }
 
 @media screen and (max-width: 350px) {
