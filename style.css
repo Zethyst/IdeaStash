@@ -30,9 +30,10 @@ nav {
   color: #111827;
   border: none;
   border-radius: 8px;
-  height: 70%;
+  /* height: 70%; */
   font-weight: 600;
-  width: auto;
+  font-size: 15px;
+  /* width: auto; */
   padding: 10px;
   display: flex;
   align-items: center;
@@ -287,17 +288,8 @@ html,
 }
 
 @media screen and (max-width: 760px) {
-  #addbtn {
-    height: 60%;
-    font-weight: 500;
-    width: auto;
-    padding: 10px;
+  #addBtn{
     transform: translateX(-30px);
-  }
-  nav a {
-    font-size: 30px;
-    font-weight: 600;
-    transform: translateX(30px);
   }
   #notesContainer {
     justify-content: center;
@@ -347,15 +339,26 @@ html,
 }
 
 @media screen and (max-width: 550px) {
+  .material-icons {
+    transform: translateY(20px);
+    transform: scale(1.1);
+    margin: auto 5px;
+  }
+  #addbtn {
+    font-weight: 500;
+    font-size: 12px;
+    padding: 5px;
+  }
+  nav a {
+    font-size: 25px;
+    font-weight: 600;
+    transform: translateX(20px);
+  }
   .notes {
     width: 430px;
     margin: 50px 50px 2px 50px;
   }
   #addbtn {
-    height: 60%;
-    font-weight: 500;
-    width: auto;
-    padding: 10px;
     transform: translateX(-15px);
   }
   nav a {
@@ -368,5 +371,18 @@ html,
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 360px) {
+  #addbtn {
+    transform: translateX(-1px);
+  }
+  .material-icons {
+    transform: translateY(20px);
+    transform: scale(1.1);
+    margin: auto 1px;
+  }
+  nav a {
+    font-size: 23px;
+    font-weight: 600;
+    transform: translateX(1px);
+  }
 }
