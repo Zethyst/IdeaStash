@@ -31,9 +31,9 @@
 Get started with IdeaStash and experience the joy of effortless note-taking and efficient information management. Let's revolutionize the way you capture and organize your thoughts!</p>
 
 ## 📌 Screenshots:
-![home](/img/home.png)
+![home](/Img/home.png)
 
-![Notes!](/img/Notes.png)
+![Notes!](/Img/Notes.png)
 
 <h2>📬 Contact</h2>
 
